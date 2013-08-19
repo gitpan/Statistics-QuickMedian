@@ -3,7 +3,8 @@ package Statistics::QuickMedian;
 use 5.006;
 use strict;
 use warnings FATAL => 'all';
-
+require Exporter;
+our @ISA = qw/Exporter/;
 our @EXPORT_OK = qw/qmedian/;
 
 =head1 NAME
@@ -12,11 +13,11 @@ Statistics::QuickMedian - Parition-based median estimator
 
 =head1 VERSION
 
-Version 0.02
+Version 0.03
 
 =cut
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 =head1 SYNOPSIS
