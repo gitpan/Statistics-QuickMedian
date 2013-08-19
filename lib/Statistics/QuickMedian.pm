@@ -8,22 +8,21 @@ our @EXPORT_OK = qw/qmedian/;
 
 =head1 NAME
 
-Statistics::QuickMedian - The great new Statistics::QuickMedian!
+Statistics::QuickMedian - Parition-based median estimator
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+CAR Hoare's partition-based Quick Median Estimator in perl
 
-Perhaps a little code snippet.
 
     use Statistics::QuickMedian qw/qmedian/;
     my $median = qmedian(\$array);
@@ -36,9 +35,13 @@ Perhaps a little code snippet.
    
 =head1 EXPORT
 
+=over
+
 =item qmedian
 
     use Statistics::QuickMedian qw/qmedian/;
+
+=back
 
 =head1 SUBROUTINES/METHODS
 
@@ -140,7 +143,7 @@ L<http://search.cpan.org/dist/Statistics-QuickMedian/>
 
 =head1 ACKNOWLEDGEMENTS
 
-http://www.i-programmer.info/babbages-bag/505-quick-median.html
+L<http://www.i-programmer.info/babbages-bag/505-quick-median.html>
 
 C.A.R. Hoare.
 
